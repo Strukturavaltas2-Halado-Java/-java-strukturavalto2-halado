@@ -7,14 +7,14 @@
 
 * [ ] [Unit tesztelés ígéretei videó](https://e-learning.training360.com/courses/take/szoftverteszteles-java-platformon-2021/lessons/10611068-unit-teszteles-igeretei)
 * [ ] [Tesztesetek életciklusa videó](https://e-learning.training360.com/courses/take/szoftverteszteles-java-platformon-2021/lessons/10611085-tesztesetek-eletciklusa)
-* [ ] [Tesztesetek életciklusa- gyakorlat videó](https://e-learning.training360.com/courses/take/szoftverteszteles-java-platformon-2021/lessons/10611037-tesztesetek-eletciklusa-gyakorlat)
+* [ ] [Tesztesetek életciklusa - gyakorlat videó](https://e-learning.training360.com/courses/take/szoftverteszteles-java-platformon-2021/lessons/10611037-tesztesetek-eletciklusa-gyakorlat)
 * [ ] [Tesztesetek életciklusa - a BeforeEach annotált metódus kiszervezése - gyakorlat videó](https://e-learning.training360.com/courses/take/szoftverteszteles-java-platformon-2021/lessons/10610982-tesztesetek-eletciklusa-a-beforeeach-annotalt-metodus-kiszervezese-gyakorlat)
 * [ ] Tesztesetek életciklusa gyakorlati feladat
 * [ ] [Elnevezések videó](https://e-learning.training360.com/courses/take/szoftverteszteles-java-platformon-2021/lessons/10610984-elnevezesek)
 * [ ] [Elnevezések gyakorlat videó](https://e-learning.training360.com/courses/take/szoftverteszteles-java-platformon-2021/lessons/10610980-elnevezesek-gyakorlat)
 * [ ] Elnevezések gyakorlati feladat
 * [ ] [Assert videó](https://e-learning.training360.com/courses/take/szoftverteszteles-java-platformon-2021/lessons/10769684-assert)
-* [ ] [Assert-gyakorlat videó](https://e-learning.training360.com/courses/take/szoftverteszteles-java-platformon-2021/lessons/10769704-assert-gyakorlat)
+* [ ] [Assert - gyakorlat videó](https://e-learning.training360.com/courses/take/szoftverteszteles-java-platformon-2021/lessons/10769704-assert-gyakorlat)
 * [ ] Assert gyakorlati feladat
 
 ### Haladó JUnit
@@ -26,7 +26,7 @@
 * [ ] Tesztesetek ismétlése gyakorlati feladat
 * [ ] [Paraméterezett tesztek videó](https://e-learning.training360.com/courses/take/szoftverteszteles-java-platformon-2021/lessons/10769721-parameterezett-tesztek)
 * [ ] [Paraméterezett tesztek - gyakorlat videó](https://e-learning.training360.com/courses/take/szoftverteszteles-java-platformon-2021/lessons/10769722-parameterezett-tesztek-gyakorlat)
-* [ ] Paarméterezett tesztek gyakorlati feladat
+* [ ] Paraméterezett tesztek gyakorlati feladat
 * [ ] [JUnit legjobb gyakorlatok videó](https://e-learning.training360.com/courses/take/szoftverteszteles-java-platformon-2021/lessons/10769735-junit-legjobb-gyakorlatok)
 
 ### AssertJ
