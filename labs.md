@@ -6,7 +6,7 @@
 Írjatok egy webshop üzemeltetését szimuláló backend alkalmazást. A webshopban felhasználók és termékek vannak. <br>
 Funkcionális követelmények:
 * Felhasználó regisztráció/bejelentkezés
-* Termékek belehejezése vásárló kosarába
+* Termékek belehelyezése a vásárló kosarába
 * Termék kivétele vásárló kosarából 
 * Termék mennyiség növelése
 * Rendelés leadása
