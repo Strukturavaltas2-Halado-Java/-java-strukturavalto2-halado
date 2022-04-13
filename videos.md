@@ -5,3 +5,11 @@ Ide gyűjtjük a konzultációk rövid leírásait, hogy könnyebben visszakeres
 ## 2022.04.11.
 
 Nyitó konzultáció, a tanfolyam általános tudnivalóinak részletes megbeszélése.
+
+## 2022.04.12.
+
+Technikai részletek megbeszélése a tanfolyamon beadandó gyakorlati feladatokkal kapcsolatban. Csoportmunka feladat kiadása. Hogyan legyen megtervezve a feladat?
+
+## 2022.04.13.
+
+Kristóf beszélt arról, hogy a tegnap kiadott feladathoz hogyan kell a teszteket megtervezni.
