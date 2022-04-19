@@ -13,3 +13,7 @@ Technikai részletek megbeszélése a tanfolyamon beadandó gyakorlati feladatok
 ## 2022.04.13.
 
 Kristóf beszélt arról, hogy a tegnap kiadott feladathoz hogyan kell a teszteket megtervezni.
+
+## 2022.04.19.
+
+Kitekintés: Continuous integration, continuous delivery.
