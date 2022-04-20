@@ -17,3 +17,7 @@ Kristóf beszélt arról, hogy a tegnap kiadott feladathoz hogyan kell a tesztek
 ## 2022.04.19.
 
 Kitekintés: Continuous integration, continuous delivery.
+
+## 2022.04.20.
+
+Átfogó ismétlés és ismétlőkérdések a tesztelés témaköréből (JUnit, AssertJ, Mockito).
