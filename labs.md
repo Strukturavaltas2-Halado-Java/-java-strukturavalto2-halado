@@ -11,3 +11,9 @@ Funkcionális követelmények:
 * Termék mennyiség növelése
 * Rendelés leadása
 * Termékek listázása/betöltése fájlból
+
+
+## Week 02
+### 2022-04-21
+
+Adott a `lab-solutions/mockito-lab-demo` project. A feladat, hogy a `MovieService` osztályra írj unit teszteket!
