@@ -21,3 +21,7 @@ Kitekintés: Continuous integration, continuous delivery.
 ## 2022.04.20.
 
 Átfogó ismétlés és ismétlőkérdések a tesztelés témaköréből (JUnit, AssertJ, Mockito).
+
+## 2022.04.21.
+
+Mockito használata, a kiadott feladat megoldása egyedül és utána közösen.
