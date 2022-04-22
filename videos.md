@@ -25,3 +25,8 @@ Kitekintés: Continuous integration, continuous delivery.
 ## 2022.04.21.
 
 Mockito használata, a kiadott feladat megoldása egyedül és utána közösen.
+
+## 2022.04.21.
+
+Mockito és AssertJ részletes átbeszélése egy gyakorlati feladaton keresztül. 
+
