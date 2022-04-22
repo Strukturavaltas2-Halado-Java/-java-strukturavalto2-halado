@@ -30,3 +30,7 @@ Mockito használata, a kiadott feladat megoldása egyedül és utána közösen.
 
 Mockito és AssertJ részletes átbeszélése egy gyakorlati feladaton keresztül. 
 
+## 2022.04.22.
+
+CI rendszerben Repository réteg tesztelése H2 In-Memory adatbázissal
+
