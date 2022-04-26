@@ -24,13 +24,16 @@ Kitekintés: Continuous integration, continuous delivery.
 
 ## 2022.04.21.
 
-Mockito használata, a kiadott feladat megoldása egyedül és utána közösen.
-
-## 2022.04.21.
-
 Mockito és AssertJ részletes átbeszélése egy gyakorlati feladaton keresztül. 
 
 ## 2022.04.22.
 
 CI rendszerben Repository réteg tesztelése H2 In-Memory adatbázissal
 
+## 2022.04.25.
+
+A JPA alapkoncepciójának a rövid átbeszélése.
+
+## 2022.04.26.
+
+Technikai információk megbeszélése. Közös debugolás hallgatói kérdés alapján. A kiadott feladat megoldása egyénileg és közösen. Az `@ElementCollection` és a kapcsolati annotációk közötti különbség.
