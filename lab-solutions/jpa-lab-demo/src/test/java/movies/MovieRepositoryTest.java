@@ -42,6 +42,20 @@ class MovieRepositoryTest {
         assertThat(result.get().getLength()).isEqualTo(121);
     }
 
+    @Test
+    void testFindByTitleWithRatings(){
+        Movie movie = new Movie("Titanic", LocalDate.of(1994,12,1),121);
+        movie.addRating(new Rating(6.7,"user1"));
+        movie.addRating(new Rating(6.9,"user2"));
+        repository.saveMovie(movie);
+
+        Movie result = repository.findMovieByTitleWithRatings("Titanic");
+
+        assertThat(result.getLength()).isEqualTo(121);
+        assertThat(result.getRatings()).extracting(Rating::getValue).containsExactly(6.7,6.9);
+
+    }
+
 
 
 

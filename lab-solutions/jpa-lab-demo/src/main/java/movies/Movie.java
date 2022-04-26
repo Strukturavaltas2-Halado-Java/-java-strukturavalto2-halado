@@ -20,6 +20,9 @@ public class Movie {
     private LocalDate releaseDate;
     private int length;
 
+    @ElementCollection
+    @CollectionTable(name="ratings", joinColumns = @JoinColumn(name="movie_id"))
+    private List<Rating> ratings = new ArrayList<>();
 
 
     public Movie() {
@@ -36,6 +39,10 @@ public class Movie {
         this.title = title;
         this.releaseDate = releaseDate;
         this.length = length;
+    }
+
+    public void addRating(Rating rating){
+        ratings.add(rating);
     }
 
 
@@ -72,5 +79,11 @@ public class Movie {
         this.length = length;
     }
 
+    public List<Rating> getRatings() {
+        return ratings;
+    }
 
+    public void setRatings(List<Rating> ratings) {
+        this.ratings = ratings;
+    }
 }

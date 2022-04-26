@@ -33,13 +33,13 @@ public class MovieRepository {
         return Optional.of(result);
     }
 
-    public Optional<Movie> findMovieByTitleWithRatings(String title){
-        EntityManager entityManager = factory.createEntityManager();
-        Movie result = entityManager.createQuery("select m from Movie m join fetch m.ratings r where m.title=:title", Movie.class)
-                .setParameter("title", title)
-                .getSingleResult();
-        entityManager.close();
+   public Movie findMovieByTitleWithRatings(String title){
+       EntityManager entityManager = factory.createEntityManager();
+       Movie result = entityManager.createQuery("select m from Movie m join fetch m.ratings where m.title=:title", Movie.class)
+               .setParameter("title", title)
+               .getSingleResult();
+       entityManager.close();
+       return result;
+   }
 
-        return Optional.of(result);
-    }
 }
