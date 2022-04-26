@@ -17,3 +17,9 @@ Funkcionális követelmények:
 ### 2022-04-21
 
 Adott a `lab-solutions/mockito-lab-demo` project. A feladat, hogy a `MovieService` osztályra írj unit teszteket!
+
+## Week 03
+### 2022-04-26
+A filmes projektet egészítsd ki a következő elemekkel. Legyen egy Rating osztályod ami embeddable.
+Ebben legyen egy `double rating` és egy `String username` attribútum. A movie osztályban vedd fel attribútumként ratingek listáját és egy metódust is amivel ratinget lehet hozzáadni a filmhez.<br>
+A `MovieRepository` osztályt bővítsd egy metódussal amiben film cím alapján lehet lekérni az adatokat (ratinggel együtt)!
