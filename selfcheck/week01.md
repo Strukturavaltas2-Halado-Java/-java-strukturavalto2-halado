@@ -40,5 +40,4 @@
 
 ### Konzultációs gyakorlati feladatok
 * [ ] Hétfő - Elérések ellenőrzése, git repók létrehozása
-* [ ] Kedd - Gyakorlati feladat
-* [ ] Szerda - Gyakorlati feladat
+* [ ] Az [itt](https://github.com/Strukturavaltas2-Halado-Java/java-strukturavalto2-halado/blob/master/labs.md) leírt, erre a hétre kiadott gyakorlati feladat(ok). 
