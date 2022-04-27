@@ -37,3 +37,7 @@ A JPA alapkoncepciójának a rövid átbeszélése.
 ## 2022.04.26.
 
 Technikai információk megbeszélése. Közös debugolás hallgatói kérdés alapján. A kiadott feladat megoldása egyénileg és közösen. Az `@ElementCollection` és a kapcsolati annotációk közötti különbség.
+
+## 2022.04.27.
+
+Átfogó ismétlés és kérdezz-felelek a JPA tananyag első feléből.
