@@ -44,4 +44,4 @@ Technikai információk megbeszélése. Közös debugolás hallgatói kérdés a
 
 ## 2022.04.28.
 
-Pár kisebb JPA-s témakör: id generálás, left join, distinct, entitás-nem entitás.
+Pár kisebb JPA-s témakör: id generálás, left join, distinct, entitás-nem entitás kezelése.
