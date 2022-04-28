@@ -2,10 +2,7 @@ package movies;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 
 @Entity
@@ -13,8 +10,7 @@ import java.util.Set;
 public class Movie {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private String id;
     private String title;
     @Column(name="dat_of_release")
     private LocalDate releaseDate;
@@ -24,22 +20,26 @@ public class Movie {
     @CollectionTable(name="ratings", joinColumns = @JoinColumn(name="movie_id"))
     private List<Rating> ratings = new ArrayList<>();
 
+    @Embedded
+    private Director director;
+
 
     public Movie() {
     }
 
     public Movie(String title, LocalDate releaseDate, int length) {
+        this.id = UUID.randomUUID().toString();
         this.title = title;
         this.releaseDate = releaseDate;
         this.length = length;
     }
 
-    public Movie(Long id, String title, LocalDate releaseDate, int length) {
-        this.id = id;
-        this.title = title;
-        this.releaseDate = releaseDate;
-        this.length = length;
-    }
+//    public Movie(Long id, String title, LocalDate releaseDate, int length) {
+//        this.id = id;
+//        this.title = title;
+//        this.releaseDate = releaseDate;
+//        this.length = length;
+//    }
 
     public void addRating(Rating rating){
         ratings.add(rating);
@@ -59,11 +59,11 @@ public class Movie {
         return length;
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -85,5 +85,13 @@ public class Movie {
 
     public void setRatings(List<Rating> ratings) {
         this.ratings = ratings;
+    }
+
+    public Director getDirector() {
+        return director;
+    }
+
+    public void setDirector(Director director) {
+        this.director = director;
     }
 }
