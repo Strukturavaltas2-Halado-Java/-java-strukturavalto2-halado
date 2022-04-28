@@ -41,3 +41,7 @@ Technikai információk megbeszélése. Közös debugolás hallgatói kérdés a
 ## 2022.04.27.
 
 Átfogó ismétlés és kérdezz-felelek a JPA tananyag első feléből.
+
+## 2022.04.28.
+
+Pár kisebb JPA-s témakör: id generálás, left join, distinct, entitás-nem entitás.
