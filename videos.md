@@ -45,3 +45,7 @@ Technikai információk megbeszélése. Közös debugolás hallgatói kérdés a
 ## 2022.04.28.
 
 Pár kisebb JPA-s témakör: id generálás, left join, distinct, entitás-nem entitás kezelése.
+
+## 2022.04.29.
+
+Különbség a `find()` és a `getReference()` metódusok között. Táblák létrehozása Flyway-jel.
