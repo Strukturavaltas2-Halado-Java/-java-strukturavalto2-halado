@@ -16,11 +16,12 @@ public class Movie {
     private LocalDate releaseDate;
     private int length;
 
-    @ElementCollection
-    @CollectionTable(name="ratings", joinColumns = @JoinColumn(name="movie_id"))
+
+    @OneToMany(mappedBy = "movie" )
     private List<Rating> ratings = new ArrayList<>();
 
-
+    @ManyToMany
+    private Set<Actor> actors = new HashSet<>();
 
 
     public Movie() {
@@ -33,12 +34,11 @@ public class Movie {
         this.length = length;
     }
 
-//    public Movie(Long id, String title, LocalDate releaseDate, int length) {
-//        this.id = id;
-//        this.title = title;
-//        this.releaseDate = releaseDate;
-//        this.length = length;
-//    }
+    public void addActor(Actor actor){
+        actors.add(actor);
+        actor.getMovies().add(this);
+    }
+
 
     public void addRating(Rating rating){
         ratings.add(rating);

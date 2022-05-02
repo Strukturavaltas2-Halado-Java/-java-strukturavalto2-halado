@@ -15,6 +15,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class MovieRepositoryTest {
 
+    ActorRepository actorRepository;
     MovieRepository repository;
     EntityManagerFactory emf;
 
@@ -23,6 +24,7 @@ class MovieRepositoryTest {
         emf = Persistence.createEntityManagerFactory("pu");
 
         repository = new MovieRepository(emf);
+        actorRepository= new ActorRepository(emf);
     }
 
 
@@ -69,6 +71,29 @@ class MovieRepositoryTest {
 
         List<Movie> result = repository.findMoviesReleasedAfter(LocalDate.of(1994,11,11));
         System.out.println(result.size());
+
+    }
+
+    @Test
+    void testSaveMovieWithActors(){
+        Movie movie = new Movie("Titanic", LocalDate.of(1994,12,1),121);
+
+        Actor actor1 = new Actor("Dicaprio",46);
+        Actor actor2 = new Actor("Kate",42);
+
+        actorRepository.saveActor(actor1);
+        actorRepository.saveActor(actor2);
+
+        movie.addActor(actor1);
+        movie.addActor(actor2);
+
+        repository.saveMovie(movie);
+
+        /*List<Movie> other = repository.findMoviesReleasedAfter(LocalDate.of(1990,1,1));
+        System.out.println(other.get(0));*/
+
+
+
 
 
     }
