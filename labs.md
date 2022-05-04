@@ -30,3 +30,19 @@ Készíts egy `Team` nevű entitást mely egy focicsapatot fog reprezentálni. M
 
 Készíts egy `TeamRepository` osztályt melyen keresztül le tudsz menteni egy csapatot. Legyen egy metódus amiben le tudsz kérdezni egy csapatot játékosokkal együtt csapatnév alapján. Ezen kívül ami frissíti egy csapat pontszámát a kapott értékre id alapján és egy metódus ami ország és osztály alapján visszaadja az összes csaptot pontszám alapján csökkenő sorrendben.     
 
+## Week 04
+### 2022-05-04
+Adott egy `Person` és egy `Child` entitás. A `Person`-nek van neve és életkora, a `Child`-nak neve és születési éve.
+Ezenkívül a `Person` tartalmaz egy `List<Child>` típusú attribútumot, a `Child` pedig egy `Person` típusú attribútumot.
+A két entitás között kétirányú egy-több kapcsolat van.
+A feladat a megfelelő JPQL lekérdezések megírása az alábbiakra:
+
+Keressük meg:
+
+- azokat a gyerekeket, akik egy megadott év után születtek
+- azokat a felnőtteket, akiknek több gyerekük is van
+- azt a felnőttet, akinek a legtöbb gyereke van
+- azt a gyereket, akinek a szülője a megadott nevű, és a megadott évben született (a gyerek)
+- azt a szülőt, akihez a paraméterül megadott nevű gyerek tartozik
+- az átlagos gyerekszámot
+- azokat a gyerekeket, akik a legtöbben vannak testvérek
