@@ -52,6 +52,16 @@ public class MovieRepository {
         return result;
     }
 
+    public Movie updateMovieWithRatings(String movieId, Rating rating){
+        EntityManager entityManager = factory.createEntityManager();
+        entityManager.getTransaction().begin();
+        Movie movie = entityManager.find(Movie.class,movieId);
+        movie.addRating(rating);
+        entityManager.getTransaction().commit();
+        entityManager.close();
+        return movie;
+    }
+
 
 
 

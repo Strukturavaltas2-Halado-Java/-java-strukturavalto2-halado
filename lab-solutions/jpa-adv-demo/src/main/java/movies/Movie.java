@@ -17,7 +17,7 @@ public class Movie {
     private int length;
 
 
-    @OneToMany(mappedBy = "movie" )
+    @OneToMany(mappedBy = "movie",cascade = CascadeType.PERSIST)
     private List<Rating> ratings = new ArrayList<>();
 
     @ManyToMany
@@ -42,6 +42,7 @@ public class Movie {
 
     public void addRating(Rating rating){
         ratings.add(rating);
+        rating.setMovie(this);
     }
 
 

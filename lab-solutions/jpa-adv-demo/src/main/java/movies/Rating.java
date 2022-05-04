@@ -14,7 +14,7 @@ public class Rating {
     private String username;
 
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne
     @JoinColumn(name = "movie_id")
     private Movie movie;
 

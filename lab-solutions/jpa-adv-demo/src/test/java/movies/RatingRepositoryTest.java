@@ -22,14 +22,11 @@ class RatingRepositoryTest {
     @Test
     void testSaveAndReadById(){
         Rating rating = new Rating(3.4,"user1");
-        Rating rating2 = new Rating(4.5,"sda");
+        Rating rating1 = new Rating(4.5,"user2");
         Movie movie = new Movie("Titanic", LocalDate.of(1994,11,11),121);
         movieRepository.saveMovie(movie);
-        rating.setMovie(movie);
-        rating2.setMovie(movie);
-        repository.saveRating(rating);
-        repository.saveRating(rating2);
-
+        repository.saveRating(rating,movie.getId());
+        repository.saveRating(rating1,movie.getId());
 
 
         Rating other = repository.findById(rating.getId());

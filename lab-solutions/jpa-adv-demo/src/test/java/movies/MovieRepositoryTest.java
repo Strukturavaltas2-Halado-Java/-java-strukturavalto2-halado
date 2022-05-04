@@ -75,6 +75,16 @@ class MovieRepositoryTest {
     }
 
     @Test
+    void saveMovieWithRatings(){
+        Movie movie = new Movie("Titanic", LocalDate.of(1994,12,1),121);
+        Rating rating = new Rating(3.4,"user1");
+        Rating rating1 = new Rating(4.5,"user2");
+        repository.saveMovie(movie);
+        repository.updateMovieWithRatings(movie.getId(),rating);
+        repository.updateMovieWithRatings(movie.getId(),rating1);
+    }
+
+    @Test
     void testSaveMovieWithActors(){
         Movie movie = new Movie("Titanic", LocalDate.of(1994,12,1),121);
 
@@ -88,11 +98,6 @@ class MovieRepositoryTest {
         movie.addActor(actor2);
 
         repository.saveMovie(movie);
-
-        /*List<Movie> other = repository.findMoviesReleasedAfter(LocalDate.of(1990,1,1));
-        System.out.println(other.get(0));*/
-
-
 
 
 
