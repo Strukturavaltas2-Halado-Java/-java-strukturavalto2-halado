@@ -49,3 +49,11 @@ Pár kisebb JPA-s témakör: id generálás, left join, distinct, entitás-nem e
 ## 2022.04.29.
 
 Különbség a `find()` és a `getReference()` metódusok között. Táblák létrehozása Flyway-jel.
+
+## 2022.05.02.
+
+Közös interaktív teszt. JPA kapcsolatok, owner és inverse side.
+
+## 2022.05.03.
+
+JPA kapcsolatok a Movie-Rating-Actor projekten keresztül.
