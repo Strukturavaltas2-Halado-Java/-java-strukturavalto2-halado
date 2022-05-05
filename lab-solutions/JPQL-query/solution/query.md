@@ -5,23 +5,23 @@ A feladat a megfelelő JPQL lekérdezések megírása az alábbiakra:
 
 Keressük meg:
 
-- azokat a gyerekeket, akik egy megadott év után születtek
+- azokat a gyerekeket, akik egy megadott év után születtek </br>
   "select c from Child c where c.yearOfBirth > :year"
   
-- azokat a felnőtteket, akiknek több gyerekük is van
+- azokat a felnőtteket, akiknek több gyerekük is van </br>
   "select p from Person p where p.children.size > 1 order by p.name"
   
-- azt a felnőttet, akinek a legtöbb gyereke van
+- azt a felnőttet, akinek a legtöbb gyereke van </br>
   "select p from Person p where p.children.size = (select max(p.children.size) from Person p)"
   
-- azt a gyereket, akinek a szülője a megadott nevű, és a megadott évben született (a gyerek)
+- azt a gyereket, akinek a szülője a megadott nevű, és a megadott évben született (a gyerek) </br>
   "select c from Child c where c.person.name = :name and c.yearOfBirth = :year"
   
-- azt a szülőt, akihez a paraméterül megadott nevű gyerek tartozik
+- azt a szülőt, akihez a paraméterül megadott nevű gyerek tartozik </br>
   "select c.person from Child c where c.name = :name"
   
-- az átlagos gyerekszámot
+- az átlagos gyerekszámot </br>
   "select avg(p.children.size) from Person p"
   
-- azokat a gyerekeket, akik a legtöbben vannak testvérek
+- azokat a gyerekeket, akik a legtöbben vannak testvérek </br>
   "select c from Child c where c.person.children.size = (select max(q.children.size) from Person q)"
