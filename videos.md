@@ -61,3 +61,7 @@ JPA kapcsolatok a Movie-Rating-Actor projekten keresztül.
 ## 2022.05.04.
 
 Átfogó ismétlés a JPA kapcsolatok és a JPQL lekérdezések témaköréből. A kiadott feladat megoldása. Ismétlőkérdések.
+
+## 2022.05.05.
+
+A kiadott feladat megoldása.
