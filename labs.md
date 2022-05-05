@@ -46,3 +46,12 @@ Keressük meg:
 - azt a szülőt, akihez a paraméterül megadott nevű gyerek tartozik
 - az átlagos gyerekszámot
 - azokat a gyerekeket, akik a legtöbben vannak testvérek
+
+### 2022-05-05
+Fejleszd tovább a Focis programot! Legyen egy `Player` entitás aminek attribútumai a neve és a játékos értéke. Egy csapathoz több játékos tartozik viszont egy játékos csak egy csapathoz tartozhat. Valósíts meg kétirányú kapcsolatot. <br>
+
+Készíts egy `PlayerRepository` osztályt. Játékost kétféleképpen lehet lementeni, csapat id-val vagy anélkül. (Ha csapat id nélkül mentődik le akkor ún. free agent lesz akit később lehet majd egy csapathoz adni.) Legyen egy metódus ami megtalál egy játékost `id` alapján.<br>
+
+A `Team` entitást bővítsd egy `int budget` attribútummal, mely a csapat költségvetését reprezentálja!
+
+Hozzd létre a `TeamSrevice` osztályt és valósítsd meg a következő üzleti logikát. Egy cspat tudjon leigazolni egy játékost. Ha egy játékos már játszik valahol akkor a játékos értékén kell megvásárolni, ha nem játszik sehol akkor ingyenesen igazolható. További feltétel, hogy egy csapat nem költhet többet egy játékosra mint a költségvetésének a 20%-a! (Ha további repository metódusokra van szükséged hozzd létre nyugodtan)

@@ -20,7 +20,7 @@ class MovieRepositoryTest {
 
     @BeforeEach
     void init(){
-        emf = Persistence.createEntityManagerFactory("pu");
+        emf = Persistence.createEntityManagerFactory("test-pu");
 
         repository = new MovieRepository(emf);
     }
