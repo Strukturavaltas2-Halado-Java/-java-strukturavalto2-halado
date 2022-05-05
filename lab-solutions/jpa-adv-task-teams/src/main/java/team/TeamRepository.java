@@ -22,6 +22,23 @@ public class TeamRepository {
         return team;
     }
 
+    public Team findTeamById(long id){
+        EntityManager em = factory.createEntityManager();
+        Team team = em.find(Team.class,id);
+        em.close();
+        return team;
+    }
+
+    public Team updateBudget(long teamId, int price){
+        EntityManager em = factory.createEntityManager();
+        em.getTransaction().begin();
+        Team team = em.find(Team.class,teamId);
+        team.setBudget(price);
+        em.getTransaction().commit();
+        em.close();
+        return team;
+    }
+
 
     public Team findTeamByNameWithPlayers(String name){
         EntityManager entityManager = factory.createEntityManager();

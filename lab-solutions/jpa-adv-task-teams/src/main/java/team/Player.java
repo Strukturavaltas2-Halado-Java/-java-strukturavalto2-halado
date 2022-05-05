@@ -14,6 +14,7 @@ public class Player {
     private int value;
 
     @ManyToOne
+    @JoinColumn(name="team_id")
     private Team team;
 
     public Player(String name, int value) {
