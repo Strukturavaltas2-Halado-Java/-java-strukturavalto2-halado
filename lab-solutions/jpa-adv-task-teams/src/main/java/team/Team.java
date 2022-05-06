@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Table(name = "teams")
 public class Team {
 
     @Id
@@ -16,6 +17,7 @@ public class Team {
     private String country;
 
     @Enumerated(EnumType.STRING)
+    @Column(name = "team_class")
     private TeamClass teamClass;
 
     @OneToMany(mappedBy = "team")

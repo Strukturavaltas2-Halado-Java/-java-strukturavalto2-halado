@@ -1,36 +1,35 @@
 package team;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.ArgumentMatchers.eq;
+import static org.mockito.Mockito.when;
 
-import static org.junit.jupiter.api.Assertions.*;
-
+@ExtendWith(MockitoExtension.class)
 class TeamPlayerServiceTest {
 
+    @Mock
+    TeamRepository teamRepository;
 
-    EntityManagerFactory factory = Persistence.createEntityManagerFactory("pu");
-    TeamRepository teamRepository = new TeamRepository(factory);
-    PlayerRepository playerRepository = new PlayerRepository(factory);
-    TeamPlayerService service = new TeamPlayerService(teamRepository,playerRepository);
+    @Mock
+    PlayerRepository playerRepository;
 
+    @InjectMocks
+    TeamPlayerService service;
 
     @Test
-    void testTransfer(){
-        Team team = teamRepository.saveTeam(new Team("Chelsae","England",TeamClass.I,10_000_000));
-        Player player = playerRepository.savePlayer(new Player("John",120));
+    void testNotEnoughBudget() {
+        when(teamRepository.findTeamById(2L)).thenReturn(new Team("Arsenal", "x", TeamClass.I, 100));
+        Player john = new Player("John Doe", 100_000);
+        john.setTeam(new Team("Chelsae", "x", TeamClass.I, 900));
+        when(playerRepository.findById(1L)).thenReturn(john);
 
-        service.transferPlayer(team.getId(),player.getId());
-
-        Team team2 = teamRepository.saveTeam(new Team("Arsenal","England",TeamClass.I,10_000_000));
-
-        service.transferPlayer(team2.getId(),player.getId());
-
-        Team team3 =teamRepository.saveTeam(new Team("Vasas","Hungary",TeamClass.II,10_000));
-
-        service.transferPlayer(team3.getId(), player.getId());
+        assertThrows(NotEnoughBudgetException.class,
+                () -> service.transferPlayer(2L, 1L));
     }
-
-
 }

@@ -2,6 +2,7 @@ package team;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import java.util.List;
 
 public class PlayerRepository {
 
@@ -48,5 +49,20 @@ public class PlayerRepository {
         em.getTransaction().commit();
         em.close();
         return player;
+    }
+
+    public List<Player> findAll() {
+        EntityManager em = factory.createEntityManager();
+        List<Player> players =  em.createQuery("select p from Player p", Player.class).getResultList();
+        em.close();
+        return players;
+    }
+
+    public void deleteAll() {
+        EntityManager em = factory.createEntityManager();
+        em.getTransaction().begin();
+        em.createQuery("delete Player p").executeUpdate();
+        em.getTransaction().commit();
+        em.close();
     }
 }
