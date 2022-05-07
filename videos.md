@@ -65,3 +65,10 @@ JPA kapcsolatok a Movie-Rating-Actor projekten keresztül.
 ## 2022.05.05.
 
 A kiadott feladat megoldása.
+
+## 2022.05.06.
+
+* Ismétlés: kapcsolatok, UML, ER-diagram
+* Naplózás
+* Séma létrehozás
+* Unittesztelés mockolással és integrációs tesztelés
