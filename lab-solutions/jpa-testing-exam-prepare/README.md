@@ -101,4 +101,4 @@ milyen értékkel térjen vissza, erre írj egy assertet, valamint ellenőrizz r
 meghívásra került-e a szükséges adatbáziskezelő metódus!
 
 A tesztosztályok és tesztmetódusok elnevezéseit a megfelelő annotáció segítségével add meg, 
-hogy milyen formában kerüljenek kiírásra!
+hogy jól olvasható formában kerüljenek kiírásra!
