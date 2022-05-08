@@ -100,5 +100,5 @@ A `BirdServiceTest` osztályban a `BirdService` függőségét a tesztosztály m
 milyen értékkel térjen vissza, erre írj egy assertet, valamint ellenőrizz rá arra is, hogy ténylegesen 
 meghívásra került-e a szükséges adatbáziskezelő metódus!
 
-A tesztosztályok és tesztmetódusok elnevezéseit a megfelelő annotáció segítségével add meg, 
+A tesztosztályok és tesztmetódusok elnevezéseit a megfelelő annotációk segítségével add meg, 
 hogy jól olvasható formában kerüljenek kiírásra!
