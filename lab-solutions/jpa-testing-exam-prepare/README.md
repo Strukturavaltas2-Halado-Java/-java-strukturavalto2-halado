@@ -99,3 +99,6 @@ A `BirdServiceTest` osztályban a `BirdService` függőségét a tesztosztály m
 `getBirdStatistics()` tesztelésére, melyben megadod, hogy a mockolt objektumot használó metódus 
 milyen értékkel térjen vissza, erre írj egy assertet, valamint ellenőrizz rá arra is, hogy ténylegesen 
 meghívásra került-e a szükséges adatbáziskezelő metódus!
+
+A tesztosztályok és tesztmetódusok elnevezéseit a megfelelő annotáció segítségével add meg, 
+hogy milyen formában kerüljenek kiírásra!
