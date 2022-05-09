@@ -72,3 +72,7 @@ A kiadott feladat megoldása.
 * Naplózás
 * Séma létrehozás
 * Unittesztelés mockolással és integrációs tesztelés
+
+## 2022.05.09.
+
+Vizsgafelkészítés egy közös interaktív teszten és egy gyakorlófeladaton keresztül.
