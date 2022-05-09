@@ -14,11 +14,11 @@ a szövegben):
 
 A `Bird` entitás az adatbázisban a következő táblába képeződik le:
 
-![bird table](images/birdtable.png)
+![bird table](images/birdtable.PNG)
 
 A `Nest` entitás táblája pedig így néz ki:
 
-![nest table](images/nesttable.png)
+![nest table](images/nesttable.PNG)
 
 Hozd létre ezt a két entitás osztályt olyan módon, hogy a forráskódban az attribútumok 
 elnevezése a Java nyelvben szokásos konvencióknak feleljen meg, de az adatbázisban 
