@@ -56,6 +56,7 @@ A `Team` entitást bővítsd egy `int budget` attribútummal, mely a csapat köl
 
 Hozzd létre a `TeamSrevice` osztályt és valósítsd meg a következő üzleti logikát. Egy cspat tudjon leigazolni egy játékost. Ha egy játékos már játszik valahol akkor a játékos értékén kell megvásárolni, ha nem játszik sehol akkor ingyenesen igazolható. További feltétel, hogy egy csapat nem költhet többet egy játékosra mint a költségvetésének a 20%-a! (Ha további repository metódusokra van szükséged hozzd létre nyugodtan)
 
+## Week 05
 ### 2022-05-09
 A vizsga gyakorló feladat kiírása itt található:
 [kiírás](https://github.com/Strukturavaltas2-Halado-Java/java-strukturavalto2-halado/tree/master/lab-solutions/jpa-testing-exam-prepare)
