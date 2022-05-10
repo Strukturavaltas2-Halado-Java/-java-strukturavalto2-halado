@@ -76,3 +76,7 @@ A kiadott feladat megoldása.
 ## 2022.05.09.
 
 Vizsgafelkészítés egy közös interaktív teszten és egy gyakorlófeladaton keresztül.
+
+## 2022.05.10.
+
+Vizsga előtti utolsó technikai kérdések tisztázása.
