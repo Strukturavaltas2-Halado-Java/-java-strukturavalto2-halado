@@ -80,3 +80,7 @@ Vizsgafelkészítés egy közös interaktív teszten és egy gyakorlófeladaton 
 ## 2022.05.10.
 
 Vizsga előtti utolsó technikai kérdések tisztázása.
+
+## 2022.05.23.
+
+A Spring belső működése, dependency injection.
