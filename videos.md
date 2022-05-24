@@ -84,3 +84,7 @@ Vizsga előtti utolsó technikai kérdések tisztázása.
 ## 2022.05.23.
 
 A Spring belső működése, dependency injection.
+
+## 2022.05.24.
+
+A Spring működése. A Lombok.
