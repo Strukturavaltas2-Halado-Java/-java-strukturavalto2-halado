@@ -88,3 +88,7 @@ A Spring belső működése, dependency injection.
 ## 2022.05.24.
 
 A Spring működése. A Lombok.
+
+## 2022.05.25.
+
+Konzultáció a Dockerről.
