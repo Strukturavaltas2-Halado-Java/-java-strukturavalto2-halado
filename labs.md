@@ -60,3 +60,36 @@ Hozzd létre a `TeamSrevice` osztályt és valósítsd meg a következő üzleti
 ### 2022-05-09
 A vizsga gyakorló feladat kiírása itt található:
 [kiírás](https://github.com/Strukturavaltas2-Halado-Java/java-strukturavalto2-halado/tree/master/lab-solutions/jpa-testing-exam-prepare)
+
+## Week 07
+### 2022-05-26
+Hozz létre egy új Springes akalmazást `incrementer` néven, amely  
+két réteget tartalmaz (controller, service) és a localhost:8080-t 
+megnyitva vagy a böngészőt frissítve mindig eggyel nagyobb számot 
+jelenít meg a böngészőablakban!
+
+Opcionális: Valósítsd meg ugyanezt három réteggel(controller, service, repository)!
+
+Figyelj arra, hogy az egyes rétegek tényleg a nekik szánt feladatot 
+valósítsák meg!
+
+Írj az `incrementer` alkalmazáshoz teszteket!
+
+Kétrétegű alkalmazás esetén a következő tesztosztályok legyenek:
+
+* service osztály tesztelésére:
+	* unit teszt (nem indul el a Spring Boot)
+* controller osztály tesztelésére:
+	* unit teszt (mockolt service osztállyal, nem indul el a Spring Boot)
+	* integrációs teszt a teljes alkalmazás elindításával
+
+Háromrétegű alkalmazás esetén a következő tesztosztályok legyenek:
+
+* repository osztály tesztelésére:
+	* unit teszt (nem indul el a Spring Boot)
+* service osztály tesztelésére:
+	* unit teszt (mockolt repository osztállyal, nem indul el a Spring Boot)
+	* integrációs teszt a teljes alkalmazás elindításával
+* controller osztály tesztelésére:
+	* unit teszt (mockolt service osztállyal, nem indul el a Spring Boot)
+	* integrációs teszt a teljes alkalmazás elindításával
