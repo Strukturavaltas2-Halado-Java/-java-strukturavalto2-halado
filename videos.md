@@ -92,3 +92,7 @@ A Spring működése. A Lombok.
 ## 2022.05.25.
 
 Konzultáció a Dockerről.
+
+## 2022.05.26.
+
+Átfogó ismétlés és ismétlőkérdések a Spring Boot bevezető leckéiből. Egy egyszerű alkalmazás létrehozása közösen.
