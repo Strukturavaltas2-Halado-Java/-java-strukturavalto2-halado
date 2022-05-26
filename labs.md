@@ -70,6 +70,8 @@ jelenít meg a böngészőablakban!
 
 Opcionális: Valósítsd meg ugyanezt három réteggel(controller, service, repository)!
 
+Valós adatbázist egyelőre természetesen nem kell használni a projektben, amit szükséges, 
+azt a memóriában tárold el.
 Figyelj arra, hogy az egyes rétegek tényleg a nekik szánt feladatot 
 valósítsák meg!
 
