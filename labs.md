@@ -104,7 +104,7 @@ Háromrétegű alkalmazás esetén a következő tesztosztályok legyenek:
 ### 2022-05-27
 A mai feladatban bicikli sharing alkalmazást készítünk.<br>
 
-Adott a bikes.csv (https://github.com/Strukturavaltas2-Halado-Java/java-strukturavalto2-halado/resources/bikes.csv) állomány, melyben egy-egy bicikli adatai találhatók:
+Adott a bikes.csv (https://github.com/Strukturavaltas2-Halado-Java/java-strukturavalto2-halado/blob/master/resources/bikes.csv) állomány, melyben egy-egy bicikli bérlés adatai találhatók:
 * A bicikli azonosítója
 * Az utolsó felhasználó egyedi azonosítója
 * Az utolsó leadás pontos ideje
