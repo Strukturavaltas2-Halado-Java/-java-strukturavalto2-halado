@@ -14,11 +14,13 @@ Funkcionális követelmények:
 
 
 ## Week 02
+
 ### 2022-04-21
 
 Adott a `lab-solutions/mockito-lab-demo` project. A feladat, hogy a `MovieService` osztályra írj unit teszteket!
 
 ## Week 03
+
 ### 2022-04-26
 A filmes projektet egészítsd ki a következő elemekkel. Legyen egy Rating osztályod ami embeddable.
 Ebben legyen egy `double rating` és egy `String username` attribútum. A movie osztályban vedd fel attribútumként ratingek listáját és egy metódust is amivel ratinget lehet hozzáadni a filmhez.<br>
@@ -31,6 +33,7 @@ Készíts egy `Team` nevű entitást mely egy focicsapatot fog reprezentálni. M
 Készíts egy `TeamRepository` osztályt melyen keresztül le tudsz menteni egy csapatot. Legyen egy metódus amiben le tudsz kérdezni egy csapatot játékosokkal együtt csapatnév alapján. Ezen kívül ami frissíti egy csapat pontszámát a kapott értékre id alapján és egy metódus ami ország és osztály alapján visszaadja az összes csaptot pontszám alapján csökkenő sorrendben.     
 
 ## Week 04
+
 ### 2022-05-04
 Adott egy `Person` és egy `Child` entitás. A `Person`-nek van neve és életkora, a `Child`-nak neve és születési éve.
 Ezenkívül a `Person` tartalmaz egy `List<Child>` típusú attribútumot, a `Child` pedig egy `Person` típusú attribútumot.
@@ -57,11 +60,13 @@ A `Team` entitást bővítsd egy `int budget` attribútummal, mely a csapat köl
 Hozzd létre a `TeamSrevice` osztályt és valósítsd meg a következő üzleti logikát. Egy cspat tudjon leigazolni egy játékost. Ha egy játékos már játszik valahol akkor a játékos értékén kell megvásárolni, ha nem játszik sehol akkor ingyenesen igazolható. További feltétel, hogy egy csapat nem költhet többet egy játékosra mint a költségvetésének a 20%-a! (Ha további repository metódusokra van szükséged hozzd létre nyugodtan)
 
 ## Week 05
+
 ### 2022-05-09
 A vizsga gyakorló feladat kiírása itt található:
 [kiírás](https://github.com/Strukturavaltas2-Halado-Java/java-strukturavalto2-halado/tree/master/lab-solutions/jpa-testing-exam-prepare)
 
 ## Week 07
+
 ### 2022-05-26
 Hozz létre egy új Springes akalmazást `incrementer` néven, amely  
 két réteget tartalmaz (controller, service) és a localhost:8080-t 
@@ -95,3 +100,23 @@ Háromrétegű alkalmazás esetén a következő tesztosztályok legyenek:
 * controller osztály tesztelésére:
 	* unit teszt (mockolt service osztállyal, nem indul el a Spring Boot)
 	* integrációs teszt a teljes alkalmazás elindításával
+	
+### 2022-05-27
+A mai feladatban bicikli sharing alkalmazást készítünk.<br>
+
+Adott a bikes.csv (https://github.com/Strukturavaltas2-Halado-Java/java-strukturavalto2-halado/resources/bikes.csv) állomány, melyben egy-egy bicikli adatai találhatók:
+* A bicikli azonosítója
+* Az utolsó felhasználó egyedi azonosítója
+* Az utolsó leadás pontos ideje
+* Az utolsó úton megtett távolság kilométerben
+
+Legyen egy `BikeService` nevű osztályod ami beolvassa a fájlt és eltárolja egy listában.
+A beolvasás ne a program indulásakor, hanem az első kérés alkalmával valósuljon meg.
+Azaz a listát visszaadó hívás esetén ellenőrizzük, hogyha a lista üres akkor beolvasunk,
+ha nem akkor visszaadjuk a listát.<br>
+
+A BikeController osztály a `/history` végponton kersztül érje el a lista minden elemét
+minden adattal együtt.<br>
+
+A `/users` végponton keresztül kapjuk meg a userek azonosítóit
+
