@@ -1,23 +1,15 @@
 package com.example.springdemo.movies;
 
+import lombok.*;
+
 import java.time.LocalDate;
 
+@AllArgsConstructor
+@Getter
 public class Movie {
 
     private String title;
     private LocalDate releaseDate;
 
-    public Movie(String title, LocalDate releaseDate) {
-        this.title = title;
-        this.releaseDate = releaseDate;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public LocalDate getReleaseDate() {
-        return releaseDate;
-    }
 
 }

@@ -18,17 +18,18 @@ public class SpringDemoApplication {
 
         System.out.println(ctx.getBeansOfType(EnglishGreetingService.class));
 
-        System.out.println(((GreetingsController)ctx.getBean("greetingsController")).sayHello());
+        System.out.println(((GreetingsController)ctx.getBean("greetingsController")).getGreetings().entrySet().size());
+        System.out.println(((GreetingsController)ctx.getBean("greetingsController")).sayHello("englishGreetingService"));
 
         System.out.println(ctx.getBeansOfType(MovieService.class));
     }
 
     @Bean
-    String createName(){
+    public String createName(){
         return "This is a Controller!";
     }
     @Bean
-    String createAnOtherName(){
+    public String createAnOtherName(){
         return "Other";
     }
 

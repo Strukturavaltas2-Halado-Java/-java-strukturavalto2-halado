@@ -3,6 +3,7 @@ package com.example.springdemo.movies;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -16,6 +17,11 @@ public class MovieService {
     public Movie findByTitle(String title){
         return movies.stream().filter(m->m.getTitle().equals(title)).findFirst().orElse(null);
     }
+
+    public List<Movie> listAllMovies(){
+        return new ArrayList<>(movies);
+    }
+
 
 
 }
