@@ -96,3 +96,7 @@ Konzultáció a Dockerről.
 ## 2022.05.26.
 
 Átfogó ismétlés és ismétlőkérdések a Spring Boot bevezető leckéiből. Egy egyszerű alkalmazás létrehozása közösen.
+
+## 2022.05.27.
+
+Közös interaktív teszt és a kiadott feladat megoldása.
