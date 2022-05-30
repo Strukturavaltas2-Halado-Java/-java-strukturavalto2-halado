@@ -100,3 +100,7 @@ Konzultáció a Dockerről.
 ## 2022.05.27.
 
 Közös interaktív teszt és a kiadott feladat megoldása.
+
+## 2022.05.30.
+
+A REST webszolgáltatások használata, a HTTP metódusok hívása.
