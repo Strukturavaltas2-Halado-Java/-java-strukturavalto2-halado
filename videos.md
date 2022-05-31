@@ -104,3 +104,7 @@ Közös interaktív teszt és a kiadott feladat megoldása.
 ## 2022.05.30.
 
 A REST webszolgáltatások használata, a HTTP metódusok hívása.
+
+## 2022.05.31.
+
+HTTP metódusok és tesztelésük egy kiadott feladaton keresztül.
