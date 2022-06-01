@@ -1,8 +1,6 @@
 package springbikedemo.bikerental.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
@@ -10,6 +8,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Getter
 @Setter
+@NoArgsConstructor
 public class BikeRental {
 
     private int id;
@@ -17,6 +16,4 @@ public class BikeRental {
     private String userId;
     private LocalDateTime lastRentFinish;
     private double km;
-
-
 }

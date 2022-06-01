@@ -1,4 +1,4 @@
-package springbikedemo;
+package springrestdemomovies;
 
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
@@ -8,14 +8,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class SpringBikeDemoApplication {
+public class SpringRestDemoMoviesApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBikeDemoApplication.class, args);
+        SpringApplication.run(SpringRestDemoMoviesApplication.class, args);
     }
 
     @Bean
-    public ModelMapper createModelMapper() {
+    public ModelMapper createModelMapper(){
         ModelMapper modelMapper = new ModelMapper();
         modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
         return modelMapper;

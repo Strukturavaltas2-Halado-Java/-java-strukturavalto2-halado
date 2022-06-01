@@ -14,6 +14,7 @@ import java.nio.file.Path;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
@@ -30,11 +31,12 @@ public class BikeService {
         this.modelMapper = modelMapper;
     }
 
-    public List<BikeRentalDTO> getAllRentals() {
+    public List<BikeRentalDTO> getAllRentals(Optional<LocalDateTime> startTime) {
         if (bikeRentals == null) {
             createAndUploadList();
         }
         return bikeRentals.stream()
+                .filter(r->startTime.isEmpty() || !r.getLastRentFinish().isBefore(startTime.get()))
                 .map(rental->modelMapper.map(rental,BikeRentalDTO.class))
                 .collect(Collectors.toList());
     }

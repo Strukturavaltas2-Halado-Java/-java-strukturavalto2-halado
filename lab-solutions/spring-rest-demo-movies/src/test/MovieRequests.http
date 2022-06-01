@@ -1,0 +1,17 @@
+POST http://localhost:8080/api/movies
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "LOTR",
+  "length": 134
+}
+
+###
+GET http://localhost:8080/api/movies/2
+Accept: application/json
+
+###
+
+
+
