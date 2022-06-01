@@ -108,3 +108,7 @@ A REST webszolgáltatások használata, a HTTP metódusok hívása.
 ## 2022.05.31.
 
 HTTP metódusok és tesztelésük egy kiadott feladaton keresztül.
+
+## 2022.06.01.
+
+Színes kiírás a konzolra. A switch szerkezet újfajta létrehozása. Átfogó ismétlés a REST webszolgáltatások témaköréből.
