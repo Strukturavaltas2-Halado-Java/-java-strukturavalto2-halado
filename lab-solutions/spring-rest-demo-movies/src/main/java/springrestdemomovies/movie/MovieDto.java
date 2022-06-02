@@ -18,6 +18,6 @@ public class MovieDto {
     private Long id;
     private String title;
     private int length;
-    private List<Integer> ratings;
+    private List<RatingDto> ratings;
     private double averageRating;
 }
