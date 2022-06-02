@@ -112,3 +112,7 @@ HTTP metódusok és tesztelésük egy kiadott feladaton keresztül.
 ## 2022.06.01.
 
 Színes kiírás a konzolra. A switch szerkezet újfajta létrehozása. Átfogó ismétlés a REST webszolgáltatások témaköréből.
+
+## 2022.06.02.
+
+A tegnapelőtti feladat befejezése.
