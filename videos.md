@@ -115,4 +115,8 @@ Színes kiírás a konzolra. A switch szerkezet újfajta létrehozása. Átfogó
 
 ## 2022.06.02.
 
-A tegnapelőtti feladat befejezése.
+A tegnapelőtti feladat befejezése. A `@RequestParam` annotációról.
+
+## 2022.06.03.
+
+Közös interaktív gyakorlóteszt, majd a megoldandó feladat kiadása.
