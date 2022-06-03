@@ -142,3 +142,23 @@ A következő funkciókat kell megvalósítani:
 * A `/{id}/ratings` URL-en keresztül lehessen egy filmre értékelést adni és az értékeléseit lekérdezni. GET esetén adjuk vissza a film értékeléseinek listáját. POST esetén egy számot várunk, de az értékelések listájával térünk vissza.
 
 
+### 2022-06-02
+Ebben a feladatban egy használtautó weboldal szolgáltatásait modellezzük.<br>
+Készíts egy `KilometerState` nevű osztályt melyben egy kilométer található és a leolvasás dátuma. (Nem entitás)<br> 
+Készíts egy `Car` osztály (entitás), melynek attribútumai egy egyedi azonosító, a márkája, típusa, a kora, illetve legyen még egy Enum az állapotáról, mely lehet kiváló, normális vagy rossz, ezen felül legyen egy KilometerState lista.<br>
+
+Legyen egy `CarService` osztály ami listában tárolja az autókat és felelős az egyedi azonosítók kiosztásáért illetve itt valósuljon meg az üzleti logika.<br>
+
+Legyen egy `CarController` osztály ami alapértelmezetten a `api/cars` végponton várja a kéréséket. A következő végpontokat valósítsd meg:
+
+* api/cars lehessen lekérdezni autót és lehessen új autót felvenni. Amikor új autót veszünk fel várunk egy kilométeróra állást is amit a listájához adunk. 
+* api/cars végponton query stringként lehessen szűrni a márkára és/vagy az autó korárára és azt is meg lehessen adni, hogy az utolsó km mérés szerint növekvő vagy csökkenő sorrendben kapjuk vissza az autókat.
+* api/cars/brands végponton kapjuk vissza a márkákat ABC sorrendben 
+* api/cars/{id}/kilometerstates végponton lehessen új kilométeróra állást hozzáadni az autóhoz, ekkor a dátum lehet az aktuális dátum és térjünk vissza a frissített entitás minden adatával
+* api/cars/{id} végponton lehessen lekérdezni egy adott autó minden adatát és lehessen törölni is azt
+
+Írj a feladathoz Unit és Integrációs teszteket is!
+
+
+
+
