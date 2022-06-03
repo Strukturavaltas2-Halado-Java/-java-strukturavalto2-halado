@@ -142,7 +142,7 @@ A következő funkciókat kell megvalósítani:
 * A `/{id}/ratings` URL-en keresztül lehessen egy filmre értékelést adni és az értékeléseit lekérdezni. GET esetén adjuk vissza a film értékeléseinek listáját. POST esetén egy számot várunk, de az értékelések listájával térünk vissza.
 
 
-### 2022-06-02
+### 2022-06-03
 Ebben a feladatban egy használtautó weboldal szolgáltatásait modellezzük.<br>
 Készíts egy `KilometerState` nevű osztályt melyben egy kilométer található és a leolvasás dátuma. (Nem entitás)<br> 
 Készíts egy `Car` osztály (entitás), melynek attribútumai egy egyedi azonosító, a márkája, típusa, a kora, illetve legyen még egy Enum az állapotáról, mely lehet kiváló, normális vagy rossz, ezen felül legyen egy KilometerState lista.<br>
