@@ -120,3 +120,7 @@ A tegnapelőtti feladat befejezése. A `@RequestParam` annotációról.
 ## 2022.06.03.
 
 Közös interaktív gyakorlóteszt, majd a megoldandó feladat kiadása.
+
+## 2022.06.07.
+
+Vizsgaremek feladatkiírás kiadása. A pénteken kiadott feladat megoldása.
