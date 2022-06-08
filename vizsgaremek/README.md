@@ -31,10 +31,9 @@ Követelmények tételesen:
 * Swagger felület
 * HTTP fájl a teszteléshez
 * Dockerfile
-* Új repository-ba kell dolgozni, melynek címe szabadon választható.
+* Új privát repository-ba kell dolgozni az organization-ön belül, melynek címe java-sv2-adv-project-VezetéknévKeresztnév
 * Commitolni legalább entitásonként, és hozzá tartozó REST végpontonként
 
-Cheat sheet: https://github.com/Training360/strukt-val-java-public/blob/master/annotations-cheat_sheet.md
 
 ## Vizsgaremek témaötletek
 
