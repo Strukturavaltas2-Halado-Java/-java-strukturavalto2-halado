@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
@@ -15,7 +16,6 @@ import java.util.Set;
 public class CarController {
 
     private CarService carService;
-
 
     @GetMapping
     public List<CarDto> getCars(@RequestParam Optional<String> brand,@RequestParam Optional<Integer> age, @RequestParam Optional<String> sort){
@@ -29,12 +29,12 @@ public class CarController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public CarDto createCar(@RequestBody CreateCarCommand createCarCommand){
+    public CarDto createCar(@Valid @RequestBody CreateCarCommand createCarCommand){
         return carService.createCar(createCarCommand);
     }
 
     @PostMapping("/{id}/kilometer-states")
-    public CarDto addKilometerStateById(@PathVariable("id") long id, @RequestBody CreateKilometerStateCommand createKilometerStateCommand){
+    public CarDto addKilometerStateById(@PathVariable("id") long id, @Valid @RequestBody CreateKilometerStateCommand createKilometerStateCommand){
         return carService.addKilometerStateById(id, createKilometerStateCommand);
     }
 

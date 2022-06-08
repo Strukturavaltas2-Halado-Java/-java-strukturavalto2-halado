@@ -19,7 +19,7 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "brand": "Suzuki",
+  "brand": "Toyota",
   "type": "Swift",
   "age": 5,
   "carCondition": "NORMAL",
