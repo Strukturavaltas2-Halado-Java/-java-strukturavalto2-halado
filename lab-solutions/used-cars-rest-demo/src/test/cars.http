@@ -1,0 +1,29 @@
+GET http://localhost:8080/api/cars/brands
+Accept: application/json
+
+###
+POST http://localhost:8080/api/cars/5/kilometer-states
+Content-Type: application/json
+
+{
+  "km": 124
+}
+
+###
+GET http://localhost:8080/api/cars?brand=suzuki
+Accept: application/json
+
+###
+POST http://localhost:8080/api/cars
+Accept: application/json
+Content-Type: application/json
+
+{
+  "brand": "Suzuki",
+  "type": "Swift",
+  "age": 5,
+  "carCondition": "NORMAL",
+  "km": 12
+}
+
+###
