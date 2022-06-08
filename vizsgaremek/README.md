@@ -31,7 +31,7 @@ Követelmények tételesen:
 * Swagger felület
 * HTTP fájl a teszteléshez
 * Dockerfile
-* Új privát repository-ba kell dolgozni az organization-ön belül, melynek címe java-sv2-adv-project-VezetéknévKeresztnév
+* Új privát repository-ba kell dolgozni az organization-ön belül, melynek címe `java-sv2-adv-project-VezetéknévKeresztnév`
 * Commitolni legalább entitásonként, és hozzá tartozó REST végpontonként
 
 
