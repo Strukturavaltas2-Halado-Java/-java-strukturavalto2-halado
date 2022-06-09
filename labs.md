@@ -160,5 +160,8 @@ Legyen egy `CarController` osztály ami alapértelmezetten a `api/cars` végpont
 Írj a feladathoz Unit és Integrációs teszteket is!
 
 
+## Week 09
 
+### 2022-06-09
 
+https://github.com/Strukturavaltas2-Halado-Java/java-strukturavalto2-halado/tree/master/lab-solutions/fortepan/fortepan-exercise
