@@ -124,3 +124,11 @@ Közös interaktív gyakorlóteszt, majd a megoldandó feladat kiadása.
 ## 2022.06.07.
 
 Vizsgaremek feladatkiírás kiadása. A pénteken kiadott feladat megoldása.
+
+## 2022.06.08.
+
+Technikai információ a vizsgaremekről. A tegnapi feladat bővítése validációval és integrációs tesztekkel.
+
+## 2022.06.09.
+
+Átfogó ismétlés a validáció, hibakezelés és a controller réteg integrációs tesztelése témakörökből. Ismétlőkérdések.
