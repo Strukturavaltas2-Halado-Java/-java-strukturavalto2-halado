@@ -9,7 +9,7 @@ A cél, hogy valósítsátok meg az egyéni ötleteteket!
 * Legalább két tábla, 1-n kapcsolatban
 * Legalább két SQL migráció
 * Legalább két entitás
-* Legalább két service
+* Legalább egy service
 * Legalább két controller
 * Minden HTTP metódusra legalább egy végpont (`GET`, `POST`, `PUT`, `DELETE`)
 
