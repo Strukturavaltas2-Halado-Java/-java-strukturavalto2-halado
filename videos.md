@@ -132,3 +132,7 @@ Technikai információ a vizsgaremekről. A tegnapi feladat bővítése validác
 ## 2022.06.09.
 
 Átfogó ismétlés a validáció, hibakezelés és a controller réteg integrációs tesztelése témakörökből. Ismétlőkérdések.
+
+## 2022.06.10.
+
+Spring Data JPA használatának alapjai a korábbi autós feladaton keresztül.
