@@ -18,7 +18,7 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:8080/api/cars
+GET http://localhost:8080/api/cars?brand=Toyota
 Accept: application/json
 
 ###
@@ -27,11 +27,11 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "brand": "Suzuki",
+  "brand": "Toyota",
   "type": "Swift",
-  "age": 10,
+  "age": 5,
   "carCondition": "NORMAL",
-  "km": 3
+  "km": -100
 }
 
 ###
