@@ -136,3 +136,11 @@ Technikai információ a vizsgaremekről. A tegnapi feladat bővítése validác
 ## 2022.06.10.
 
 Spring Data JPA használatának alapjai a korábbi autós feladaton keresztül.
+
+## 2022.06.13.
+
+Az autós alkalmazás csinosítgatása (Flyway, tesztek).
+
+## 2022.06.14.
+
+Gyakorló vizsga feladatsor közös megoldása.
