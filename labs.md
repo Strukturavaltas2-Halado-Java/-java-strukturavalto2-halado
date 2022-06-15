@@ -165,3 +165,9 @@ Legyen egy `CarController` osztály ami alapértelmezetten a `api/cars` végpont
 ### 2022-06-09
 
 https://github.com/Strukturavaltas2-Halado-Java/java-strukturavalto2-halado/tree/master/lab-solutions/fortepan/fortepan-exercise
+
+## Week 10
+
+## 2022-06-15
+
+https://github.com/Strukturavaltas2-Halado-Java/java-strukturavalto2-halado/blob/master/lab-solutions/fortepan/fortepan-db-solution/README.md
