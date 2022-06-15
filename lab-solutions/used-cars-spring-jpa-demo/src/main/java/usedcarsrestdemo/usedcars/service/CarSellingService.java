@@ -40,16 +40,7 @@ public class CarSellingService {
     }
 
     public List<CarDto> getCars(Optional<String> brand, Optional<Integer> age, Optional<String> sort) {
-        List<Car> result;
-        if(brand.isPresent() && age.isPresent()){
-        result = carsRepository.findAllByBrandAndAgeIsLessThanEqual(brand.get(),age.get());
-        }else if(brand.isPresent()){
-            result = carsRepository.findAllByBrand(brand.get());
-        }else if(age.isPresent()){
-            result = carsRepository.findAllByAgeIsLessThanEqual(age.get());
-        }else{
-            result = carsRepository.findAll();
-        }
+        List<Car> result = carsRepository.findAllByBrandAndAgeIsLessThanEqual(brand, age);
 
         List<CarDto> resultDto = result.stream()
                 .map(car -> modelMapper.map(car, CarDto.class))
@@ -81,7 +72,7 @@ public class CarSellingService {
     }
 
     public Set<String> getCarBrands() {
-        return null;
+        return carsRepository.getAllBrands();
 
     }
 

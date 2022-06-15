@@ -8,6 +8,7 @@ import lombok.Setter;
 import usedcarsrestdemo.usedcars.model.CarCondition;
 
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Positive;
 import javax.validation.constraints.PositiveOrZero;
 
 @AllArgsConstructor
@@ -23,6 +24,7 @@ public class CreateCarCommand {
     @PositiveOrZero
     private int age;
     private CarCondition carCondition;
-    @PositiveOrZero
+
+    @Positive(message = "must be positive")
     private int km;
 }
