@@ -144,3 +144,7 @@ Az autós alkalmazás csinosítgatása (Flyway, tesztek).
 ## 2022.06.14.
 
 Gyakorló vizsga feladatsor közös megoldása.
+
+## 2022.06.15.
+
+Átfogó ismétlés a Spring Data JPA, MariaDb, Flyway témakörökből. Statikus welcome page beállítása a Spring Boot-os alkalmazáshoz. A JUnit Extension osztályok használata, saját Extension osztály létrehozása. Ismétlőkérdések.
