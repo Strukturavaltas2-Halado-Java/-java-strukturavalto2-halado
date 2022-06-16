@@ -3,9 +3,9 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "name": "John Doe",
+  "name": "Michael",
   "dateOfBirth": "2002-12-01",
-  "playerPosition": "STRIKER"
+  "playerPosition": "GOALKEEPER"
 
 }
 

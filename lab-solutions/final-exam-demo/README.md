@@ -24,7 +24,7 @@ A feladat megoldásához a következő funkciókat kell megvalósítanod a megfe
       sem igazolta le)
     * Lehessen törölni egy játékost id alapján a `/api/players/{id}` végponton
 
-* A `TeamContorller` a `/api/teams= végponton figyel
+* A `TeamContorller` a `/api/teams` végponton figyel
     * Lehessen lekérdezni a csapatokat, az összes játékosukkal együtt
     * Lehessen új csapatot létrehozni
     * Lehessen egy csapathoz új játékost hozzáadni a `/api/teams/{id}/players` végponton keresztül post metódussal. Ebben az esetben

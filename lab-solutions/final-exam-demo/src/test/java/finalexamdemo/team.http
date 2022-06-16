@@ -1,0 +1,36 @@
+GET http://localhost:8080/api/teams
+Accept: application/json
+
+###
+POST http://localhost:8080/api/teams
+Content-Type: application/json
+
+{
+  "name": "Chelsea",
+  "players": [
+    {
+      "name": "Joe Doe",
+      "dateOfBirth": "2002-12-01",
+      "playerPosition": "STRIKER"
+    }
+  ]
+}
+
+###
+POST http://localhost:8080/api/teams/5/players
+Content-Type: application/json
+
+
+{
+  "name": "John Doe",
+  "dateOfBirth": "2002-12-01",
+  "playerPosition": "STRIKER"
+}
+
+###
+PUT http://localhost:8080/api/teams/5/players
+Content-Type: application/json
+
+{
+  "playerId": 10
+}

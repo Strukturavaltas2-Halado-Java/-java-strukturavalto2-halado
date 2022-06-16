@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.engine.internal.Cascade;
 
 import javax.persistence.*;
 import java.util.List;
@@ -23,6 +24,16 @@ public class Team {
 
     private String name;
 
-    @OneToMany(mappedBy = "team")
+    @OneToMany(mappedBy = "team",cascade = CascadeType.PERSIST)
     private List<Player> players;
+
+    public Team(String name, List<Player> players) {
+        this.name = name;
+        this.players = players;
+    }
+
+    public void addPlayer(Player player){
+        players.add(player);
+        player.setTeam(this);
+    }
 }
