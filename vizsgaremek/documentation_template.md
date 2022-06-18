@@ -45,6 +45,7 @@ Végpontok:
 
 
 Ide még leírhattok sepciális üzleti logikát, pl a dátum nem lehet nagyobb az előzőnél stb stb
+
 ---
 
 ## Technológiai részletek
