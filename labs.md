@@ -168,6 +168,6 @@ https://github.com/Strukturavaltas2-Halado-Java/java-strukturavalto2-halado/tree
 
 ## Week 10
 
-## 2022-06-15
+### 2022-06-15
 
 https://github.com/Strukturavaltas2-Halado-Java/java-strukturavalto2-halado/blob/master/lab-solutions/fortepan/fortepan-db-solution/README.md
