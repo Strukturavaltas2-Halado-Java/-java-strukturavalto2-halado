@@ -152,3 +152,11 @@ Gyakorló vizsga feladatsor közös megoldása.
 ## 2022.06.16.
 
 A focicsapatos feladat befejezése.
+
+### 2022.06.20.
+
+Az utolsó konzultáció.
+
+Thymeleaf, illetve időgép készítése tesztesetekhez.
+
+Könnyes búcsú :')
